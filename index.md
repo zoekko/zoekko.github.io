@@ -7,7 +7,7 @@ title: About Me
   <div style="text-align: right;">
     <h1><span class="name-title" style="font-weight: 900; color: #2594af;">Zoe Ko</span></h1>
     <p style="font-size: 1.2em;"><strong>PhD Candidate in Physics & Astronomy at Johns Hopkins University</strong></p>
-    <p style="font-size: 1.2em;">Reach me at: zko2 [at] jh.edu</p>
+    <p style="font-size: 1.2em;">zko2 [at] jh.edu</p>
   </div>
   <div style="flex-shrink: 0;">
     <img src="zoe.jpg" alt="Zoe Ko" width="200" style="border-radius: 50%;">
@@ -21,4 +21,8 @@ title: About Me
 Hello! I am a PhD candidate in Physics & Astronomy at Johns Hopkins University, where I work with <a href="https://nestor-espinoza.com/" target="_blank">Dr. Néstor Espinoza</a> in the <a href="https://www.stsci.edu/stsci-research/research-groups/transiting-exoplanets-group" target="_blank">Transiting Exoplanets Group</a> at STScI. My research interests center on leveraging statistical and computational tools to advance the study of exoplanet atmospheres.
 <br><br>
 Currently, my work involves developing statistical frameworks to mitigate the effects of stellar contamination in transmission spectroscopy, with the goal of achieving more reliable and precise characterizations of distant worlds using data from NASA's James Webb Space Telescope.
+<br><br>
+I am always eager to keep learning and expanding my skillsets, and I am particularly interested in continuing to develop stellar contamination mitigation techniques as well as exploring new computational and statistical approaches that can push the boundaries of exoplanetary science.
+<br><br>
+Feel free to reach out at zko2 [at] jh.edu!
 </div>
