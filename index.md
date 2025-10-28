@@ -10,7 +10,7 @@ title: About Me
   <div>
     <h1 style="font-size: 3rem; font-weight: 800;">Zoe Ko</h1>
     <p><strong>PhD Candidate in Physics & Astronomy at Johns Hopkins University</strong></p>
-    <p>Feel free to reach out: zko2 [at] jh.edu</p>
+    <p>Feel free to reach out at: zko2 [at] jh.edu</p>
   </div>
 </div>
 
