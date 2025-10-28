@@ -10,15 +10,10 @@ title: About Me
   <div>
     <h1>Zoe Ko</h1>
     <p><strong>PhD Candidate in Physics & Astronomy at Johns Hopkins University</strong></p>
+    <p>zko2 [at] jh.edu</p>
   </div>
-</div>
-
-<div align="center" class="navbar">
-  <a href="index.html">About Me</a>
-  <a href="research.html">Research</a>
-  <a href="cv.pdf">CV</a>
 </div>
 
 ---
 
-Welcome to my personal website. Here you’ll find information about my research interests, my CV, and a little more about me.
+Welcome to my personal website. Currently under construction— more to come soon!
