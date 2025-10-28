@@ -49,9 +49,7 @@ a {
   color: #2594af;
   text-decoration: none;
 }
-a:hover {
-  font-weight: bold;
-}
+
 
 /* Tweak navigation bar spacing, make it look like tabs (optional) */
 .navbar {
