@@ -2,8 +2,8 @@
 layout: default
 title: About Me
 ---
-
-<div style="display: flex; align-items: center; justify-content: center; padding-bottom: 2rem;">
+    
+<div style="display: flex; align-items: center; justify-content: flex-start; padding-bottom: 2rem;">
   <div style="flex-shrink: 0; margin-right: 2rem;">
     <img src="zoe.jpg" alt="Zoe Ko" width="200" style="border-radius: 50%;">
   </div>
