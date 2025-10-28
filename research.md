@@ -30,5 +30,5 @@ My current work aims to overcome these challenges by implementing Gaussian Proce
 <br><br>
 As a test case, I apply this GP-aided framework to study a giant planet orbiting a small, highly variable M dwarf. <b>Ultimately, the goal of my current work is to push the boundaries of exoplanet atmospheric characterization by implementing novel statistical frameworks that can robustly disentangle planetary signals from stellar contamination.</b>
 <br><br>
-<b><i>Results coming soon.</i></b>
+<i>Results coming soon.</i>
 </div>
