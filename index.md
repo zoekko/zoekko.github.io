@@ -1,11 +1,10 @@
-<link rel="stylesheet" href="/assets/css/style.css">
-
 ---
+layout: default
 title: About Me
 ---
 
 <p align="center">
-  <img src="zoe.jpg" alt="Zoe Ko" width="200" style="border-radius:50%;">
+  <img src="zoe.jpg" alt="Zoe Ko" width="200">
 </p>
 
 <h1 align="center">Zoe Ko</h1>
@@ -14,14 +13,12 @@ title: About Me
   <strong>PhD Candidate in Physics & Astronomy at Johns Hopkins University</strong>
 </p>
 
+<div align="center" class="navbar">
+  <a href="index.html">About Me</a>
+  <a href="research.html">Research</a>
+  <a href="cv.html">CV</a>
+</div>
+
 ---
 
-## Navigation
-
-[About Me](index.html) | [Research](research.html) | [CV](cv.html)
-
----
-
-## Welcome!
-
-Welcome to my personal website. Here you’ll find information about my research interests, CV, and more about me.
+Welcome to my personal website. Here you’ll find information about my research interests, my CV, and a little more about me.

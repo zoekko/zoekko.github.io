@@ -1,12 +1,13 @@
-<link rel="stylesheet" href="/assets/css/style.css">
-
 ---
+layout: default
 title: Research
 ---
 
-## Navigation
-
-[About Me](index.html) | [Research](research.html) | [CV](cv.html)
+<div align="center" class="navbar">
+  <a href="index.html">About Me</a>
+  <a href="research.html">Research</a>
+  <a href="cv.html">CV</a>
+</div>
 
 ---
 
