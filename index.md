@@ -4,7 +4,7 @@ title: About Me
 ---
 
 <div style="display: flex; align-items: center; justify-content: space-between; padding-bottom: 2rem;">
-  <div style="text-align: left;">
+  <div style="text-align: right;">
     <h1><span class="name-title">Zoe Ko</span></h1>
     <p style="font-size: 1.2em;"><strong>PhD Candidate in Physics & Astronomy at Johns Hopkins University</strong></p>
     <p style="font-size: 1.2em;">zko2 [at] jh.edu</p>

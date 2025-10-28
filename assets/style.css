@@ -73,9 +73,9 @@ a:hover {
 }
 
 
-/* Style for the name to match the nav link color */
+/* Style for the name to match the body text color */
 .name-title {
-  color: inherit;
+  color: #222;
   font-size: 1.2em;
 }
 
@@ -94,6 +94,6 @@ a:hover {
 .caption {
   font-size: 0.8em;
   color: #777;
-  text-align: left;
+  text-align: right;
   margin-top: 5px;
 }
