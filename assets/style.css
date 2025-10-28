@@ -95,3 +95,9 @@ a {
   text-align: right;
   margin-top: 5px;
 }
+
+b {
+  font-weight: 900;
+  /* You can also add color or other properties: */
+  /* color: #222; */
+}
