@@ -29,12 +29,20 @@ body {
   background: #ffffff;
   color: #222;
   font-weight: 300;
+  font-size: 1.1em; /* Increased body font size */
 }
 
 /* Sharper, larger headings */
-h1, h2 {
+h1 {
   font-family: 'Avenir', 'Raleway', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
+  font-size: 2.2em; /* Increased H1 font size */
+}
+
+h2 {
+  font-family: 'Avenir', 'Raleway', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.8em; /* Increased H2 font size */
 }
 
 a {
@@ -67,7 +75,8 @@ a:hover {
 
 /* Style for the name to match the nav link color */
 .name-title {
-  color: #2594af;
+  color: inherit;
+  font-size: 1.2em;
 }
 
 /* Container for images to handle caption positioning */
@@ -83,9 +92,8 @@ a:hover {
 
 /* Style for the image caption */
 .caption {
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
   font-size: 0.8em;
   color: #777;
+  text-align: left;
+  margin-top: 5px;
 }
