@@ -63,3 +63,29 @@ a:hover {
   .wrapper { padding: 14px 2px; }
   .navbar a { font-size: 16px; }
 }
+
+
+/* Style for the name to match the nav link color */
+.name-title {
+  color: #2594af;
+}
+
+/* Container for images to handle caption positioning */
+.image-container {
+  position: relative;
+  margin: 20px 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style for the image caption */
+.caption {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 0.8em;
+  color: #777;
+}
