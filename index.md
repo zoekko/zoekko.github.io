@@ -1,27 +1,19 @@
-<link rel="stylesheet" href="/assets/css/style.css">
-
 ---
+layout: default
 title: About Me
 ---
 
-<p align="center">
-  <img src="zoe.jpg" alt="Zoe Ko" width="200" style="border-radius:50%;">
-</p>
-
-<h1 align="center">Zoe Ko</h1>
-
-<p align="center">
-  <strong>PhD Candidate in Physics & Astronomy at Johns Hopkins University</strong>
-</p>
-
----
-
-## Navigation
-
-[About Me](index.html) | [Research](research.html) | [CV](cv.html)
+<div style="display: flex; align-items: center; justify-content: center; padding-bottom: 2rem;">
+  <div style="flex-shrink: 0; margin-right: 2rem;">
+    <img src="zoe.jpg" alt="Zoe Ko" width="200" style="border-radius: 50%;">
+  </div>
+  <div>
+    <h1>Zoe Ko</h1>
+    <p><strong>PhD Candidate in Physics & Astronomy at Johns Hopkins University</strong></p>
+    <p>zko2 [at] jh.edu</p>
+  </div>
+</div>
 
 ---
 
-## Welcome!
-
-Welcome to my personal website. Here you’ll find information about my research interests, CV, and more about me.
+Welcome to my personal website. Currently under construction— more to come soon!
