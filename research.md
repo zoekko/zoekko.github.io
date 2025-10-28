@@ -6,7 +6,7 @@ title: Research
 # Research
 
 <div style="text-align: left;">
-**My current research focuses on developing statistical methods to effectively mitigate stellar contamination in transmission spectroscopy, opening the door to more accurate characterization of exoplanetary atmospheres.**
+<b>My current research focuses on developing statistical methods to effectively mitigate stellar contamination in transmission spectroscopy, opening the door to more accurate characterization of exoplanetary atmospheres.</b>
 <br><br>
 Since the launch of NASA’s James Webb Space Telescope (JWST), the field of exoplanet atmosphere characterization has made remarkable advances. Transmission spectroscopy now allows astronomers to detect molecules and clouds on distant worlds, offering insights into planet formation and migration.
 </div>
@@ -26,9 +26,9 @@ However, this process is complicated by stellar contamination—variability and 
 </div>
 
 <div style="text-align: left;">
-My current work aims to overcome these challenges by **implementing Gaussian Processes into the atmospheric retrieval pipeline.** Rather than relying solely on physical models, **I am developing a flexible, data-driven framework that can effectively model the unknown and complex stellar signals present in transmission spectra.** Gaussian Processes are flexible statistical models that can capture complex patterns in data without assuming a specific form, making them a powerful tool to characterize stellar noise in transmission spectra.
+My current work aims to overcome these challenges by <b>implementing Gaussian Processes into the atmospheric retrieval pipeline.</b> Rather than relying solely on physical models, <b>I am developing a flexible, data-driven framework that can effectively model the unknown and complex stellar signals present in transmission spectra.</b> Gaussian Processes are flexible statistical models that can capture complex patterns in data without assuming a specific form, making them a powerful tool to characterize stellar noise in transmission spectra.
 
-As a test case, I apply this GP-aided framework to study a giant planet orbiting a small, highly variable M dwarf. **Ultimately, the goal of my current work is to push the boundaries of exoplanet atmospheric characterization by implementing novel statistical frameworks that can robustly disentangle planetary signals from stellar contamination.**
-
+As a test case, I apply this GP-aided framework to study a giant planet orbiting a small, highly variable M dwarf. <b>Ultimately, the goal of my current work is to push the boundaries of exoplanet atmospheric characterization by implementing novel statistical frameworks that can robustly disentangle planetary signals from stellar contamination.</b>
+<br>
 *Results coming soon.*
 </div>
