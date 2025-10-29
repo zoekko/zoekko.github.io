@@ -8,7 +8,7 @@ title: About Me
 </div>
 
 <div style="text-align: left;">
-Hello! I’m Zoe. I grew up in Northern California, where I studied astrophysics and data science at UC Berkeley. After graduating in 2023, I spent an incredible year teaching English in Kalasin, Thailand under a Fulbright Scholarship, which I documented through a <a href="https://zoeko555.wixsite.com/zoeko" target="_blank">personal blog</a>. Now, I am a PhD student at Johns Hopkins University in Baltimore, Maryland, where I enjoy spending my non-science hours outdoors on my bike, learning (the very basics) of guitar, or in the gym training jiu jitsu. 
+Hello! I’m Zoe. I grew up in Northern California, where I studied astrophysics and data science at UC Berkeley. After graduating in 2023, I spent an incredible year teaching English in Kalasin, Thailand under a Fulbright Scholarship, which I documented through a <a href="https://zoeko555.wixsite.com/zoeko" target="_blank">personal blog</a>. Now, I am a PhD student at Johns Hopkins University in Baltimore, Maryland, where I enjoy spending my non-science hours outdoors on my bike, learning (the very basics of) guitar, or in the gym training jiu jitsu. 
 </div>
 
 <div style="display: flex; justify-content: space-around; margin-top: 20px;">
