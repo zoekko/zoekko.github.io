@@ -22,7 +22,7 @@ Hello! I am a PhD candidate in Physics & Astronomy at Johns Hopkins University, 
 <br><br>
 Currently, my work involves developing statistical frameworks to mitigate the effects of stellar contamination in transmission spectroscopy, with the goal of achieving more reliable and precise characterizations of distant worlds using data from NASA's James Webb Space Telescope.
 <br><br>
-I am always eager to keep learning and expanding my skillsets, and I am particularly interested in continuing to develop stellar contamination mitigation techniques as well as exploring new computational and statistical approaches that can push the boundaries of exoplanetary science.
+I am always eager to continue learning and expanding my skillsets, and I am particularly interested in continuing to develop stellar contamination mitigation techniques as well as exploring new computational and statistical approaches that can push the boundaries of exoplanetary science.
 <br><br>
 Feel free to reach out at zko2 [at] jh.edu!
 </div>
