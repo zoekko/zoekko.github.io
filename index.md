@@ -3,8 +3,8 @@ layout: default
 title: Home
 ---
 
-<div style="display: flex; align-items: center; justify-content: space-between; padding-bottom: 2rem;">
-  <div style="text-align: right;">
+<div style="display: flex; align-items: center; justify-content: flex-end; padding-bottom: 2rem;">
+  <div style="text-align: right; margin-right: 2em;">
     <h1><span class="name-title" style="font-weight: 900; color: #2594af;">Zoe Ko</span></h1>
     <p style="font-size: 1.2em;"><strong>PhD Candidate in Physics & Astronomy<br>at Johns Hopkins University</strong></p>
     <p style="font-size: 1.2em;">zko2 [at] jh.edu</p>
