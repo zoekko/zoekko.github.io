@@ -17,7 +17,7 @@ Since the launch of NASA’s James Webb Space Telescope (JWST), the field of exo
 </div>
 
 <div style="text-align: left;">
-However, this process is complicated by stellar contamination—variability and heterogeneities like spots on the host star, which can mimic or obscure the signals from exoplanet atmospheres. Physical models used to correct for this are frequently oversimplified, while more accurate, physics-based models are currently too computationally demanding to use broadly.
+However, this process is complicated by stellar contamination---variability and heterogeneities like spots on the host star---which can mimic or obscure the signals from exoplanet atmospheres. Physical models used to correct for this are frequently oversimplified, while more accurate, physics-based models are currently too computationally demanding to use broadly.
 </div>
 
 <div class="image-container">
