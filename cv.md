@@ -1,4 +1,4 @@
-<div class="cv-container">
+<div class="cv-container" style="text-align: left;">
   <h1>Zoe Ko</h1>
   <p><a href="CV.pdf" target="_blank">View full CV in PDF form here.</a></p>
 
