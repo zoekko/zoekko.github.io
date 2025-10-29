@@ -14,14 +14,14 @@ Hello! I’m Zoe. I grew up in Northern California, where I studied astrophysics
 <div style="display: flex; justify-content: space-around; margin-top: 20px;">
   <div style="text-align: right;">
     <img src="berk.jpeg" alt="Berkeley, California" style="width: 200px; height: 200px; object-fit: cover;">
-    <p style="color: gray; font-size: 0.8em; margin-top: 5px;">Berkeley, California,</p>
+    <p style="color: gray; font-size: 0.8em; margin-top: 5px;">Berkeley, California</p>
   </div>
   <div style="text-align: right;">
     <img src="thailand.jpeg" alt="Surat Thani, Thailand" style="width: 200px; height: 200px; object-fit: cover;">
-    <p style="color: gray; font-size: 0.8em; margin-top: 5px;">Surat Thani, Thailand,</p>
+    <p style="color: gray; font-size: 0.8em; margin-top: 5px;">Surat Thani, Thailand</p>
   </div>
   <div style="text-align: right;">
     <img src="balti.jpeg" alt="Baltimore, Maryland" style="width: 200px; height: 200px; object-fit: cover;">
-    <p style="color: gray; font-size: 0.8em; margin-top: 5px;">Baltimore, Maryland,</p>
+    <p style="color: gray; font-size: 0.8em; margin-top: 5px;">Baltimore, Maryland</p>
   </div>
 </div>
