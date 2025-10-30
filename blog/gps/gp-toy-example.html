@@ -174,36 +174,33 @@
         <h2>A Toy Example: GPs to Predict Temperature</h2>
         <div>
             <p>
-                Now let’s run a GP regression on the fake temperature data. I used the <b>Squared Exponential kernel</b>—which determines how smooth or wiggly the predicted function is.
+                Now let’s run a GP regression on the fake temperature data. I used the Squared Exponential kernel, which I will discuss later, but these kernels essentially determine how smooth or wiggly the predicted function is. Let's take a look at the GP's prediction.
             </p>
             <div class="image-container">
                 <img src="gp_no_error.png" alt="GP prediction without error" />
                 <span class="caption">GP fit with no measurement error.</span>
             </div>
             <p>
-                The GP prediction fits the data perfectly at observed points, with zero uncertainty (assuming perfect measurements).
-                As you move further away from observed points, the uncertainty (shaded region) increases. If observations are made close together, there’s less uncertainty between them.
-                <br><br>
-                But in real life, measurement error exists, so let’s add in some error bars to the observations and update the fit.
+                At the observed points, the GP prediction matches the data with very zero uncertainty. This is assuming we measured the temperature perfectly. As you move further away from the observations, the uncertainty (shaded region) increases. If observations are made very close together, there is less uncertainty between them. But in real life, measurement error exists, so let’s add in some error bars to the observations and update the GP fit.
             </p>
             <div class="image-container">
                 <img src="gp_with_error.png" alt="GP fit with error bars" />
                 <span class="caption">GP fit incorporating observational uncertainties.</span>
             </div>
             <p>
-                GP fit incorporating observational errors looks more realistic.
+                That looks a bit more realistic.
                 <br>
-                Now, the fitted GP lets us <b>interpolate</b> (estimate between known data) or <b>extrapolate</b> (predict beyond the data range), and crucially, tells us how much we can trust each prediction. For example, the temperature on Day 100 is predicted to be 74.3° ± 5.6°. If you predict far beyond the last observation, uncertainty increases, reflecting our lack of information.
+                The fitted GP now lets us interpolate (estimate between known data) or extrapolate (predict beyond the data range), and crucially, it tells us how much we can trust each prediction. For example, the temperature on Day 100 is predicted to be 74.3° ± 5.6°. If you predict far beyond the last observation, uncertainty increases, reflecting our lack of information.
             </p>
             <p>
-                And that’s an example of how GPs can be used in regression: <b>Given noisy, sparse data, GPs flexibly fit and quantify your uncertainty everywhere.</b>
+                And that’s an example of how GPs can be used in regression: <b>Given noisy, sparse data, GPs flexibly fit and quantify uncertainty for any input.</b>
             </p>
         </div>
 
         <h2>How does this all actually work?</h2>
         <div>
             <p>
-                Let’s revisit the technical definition:
+                Let’s revisit the second GP definition:
             </p>
             <blockquote>“A Gaussian process is a collection of random variables, any finite number of which have a joint Gaussian distribution.”</blockquote>
             <p>
