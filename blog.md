@@ -3,10 +3,10 @@ layout: default
 title: Blog
 ---
 
-<h1 style="font-size: 1.8em; margin-bottom: 0.5em;">
+<h1 style="font-size: 1.5em; margin-bottom: 0.5em;">
   Welcome to my personal blog—
 </h1>
-<h3 style="font-size: 1.45em; font-weight: 500; margin-top: 0;">
+<h3 style="font-size: 1.45em; font-weight: 400; margin-top: 0;">
   which is really less of a blog and more of a compilation of my notes on things I’m learning.
 </h3>
 
@@ -25,7 +25,7 @@ title: Blog
   </div>
   
   <p style="margin-top:1em;">
-    Gaussian Processes are powerful statistical tools for modeling complex, noisy data—especially when the underlying relationship isn’t known. In this article, I build up intuition for GPs using a simple toy example, demonstrating how they can flexibly capture patterns in data and why they matter in scientific explorations.
+    Gaussian Processes are powerful statistical tools for modeling complex, noisy data—especially when the underlying relationship isn’t known. In this post, I build up intuition for GPs using a simple toy example, demonstrating how they can flexibly capture patterns in data while providing uncertainty constraints.
   </p>
   
 </div>
