@@ -253,36 +253,42 @@
         <h2>Choosing the right GP kernel</h2>
         <div>
             <p>
-                The <b>kernel</b> (covariance function) governs these correlations. It encodes your assumptions about how the data should behave: how correlated points should be, how smooth or wiggly the function might be, and whether there are underlying patterns like seasonality.
+                The GP kernel governs these correlations. It encodes your assumptions about how the data should behave: how correlated points should be, how smooth or wiggly the function might be, and whether there are underlying patterns like seasonality. 
+                <br><br>
+                For the weather example, I used a squared exponential (SE) kernel. This kernel basically says: inputs closer together are more highly correlated (nearby temperatures should be similar), and the changes should happen smoothly (temperatures shouldn’t instantaneously spike or drop). 
+                <br><br>
+                There are many kernels to choose from, each modeling different behaviors. Here are examples of four different kernels that I used to model the same weather data. 
             </p>
             <ul>
-                <li><b>Squared Exponential (SE):</b> Assumes outputs are similar for nearby inputs; favors smooth, gradual changes.</li>
+                <li><b>Squared Exponential:</b> Assumes outputs are similar for nearby inputs; favors smooth, gradual changes.</li>
                 <li><b>Matern 3/2:</b> Allows for less smoothness (more roughness) in the fitted curve.</li>
-                <li><b>ExpSineSquared:</b> Models repeating, periodic patterns.</li>
-                <li><b>SE + ExpSineSquared (Composite):</b> Combines smooth trends with periodic/seasonal patterns.</li>
+                <li><b>Exponential Sine Squared:</b> Models repeating, periodic patterns.</li>
+                <li><b>Squared Exponential + Exponential Sine Squared (Composite):</b> Combines smooth trends with periodic/seasonal patterns. It is possible to combine any of the kernels to capture complex structure.</li>
             </ul>
             <div class="image-container">
                 <img src="kernel_choice.png" alt="Comparison of GP kernels" />
                 <span class="caption">GP predictions using different kernels.</span>
             </div>
-            <p><b>Takeaway:</b> Your kernel choice is crucial—it tells the GP what kind of structure to expect in your data. Choose wisely!</p>
+            <p><b>Takeaway:</b> Your kernel choice is crucial, as it tells the GP what kind of structure to expect in your data.</p>
         </div>
 
         <h2>Kernel Hyperparameters: Amplitude & Length Scale</h2>
         <div>
             <p>
-                Once you’ve chosen your kernel, you need to set its <b>hyperparameters</b>:
-                <br>
+                Once you’ve chosen your kernel, you need to set its hyperparameters:
+                <br><br>
                 Amplitude: Controls how much the function can vary vertically. Larger amplitude means the GP expects bigger changes.
-                <br>
+                <br><br>
                 Length scale: Controls how quickly the function can change. Small length scales let the GP fit rapid changes; large length scales create smoother functions.
+                <br><br>
+                Here, I use the squared exponential kernel in all four panels, but I varying the length scale and amplitude.
             </p>
             <div class="image-container">
                 <img src="hyperparameter_choice.png" alt="GP fit with varied amplitude and length scale"/>
-                <span class="caption">GP fits with different amplitudes and length scales.</span>
+                <span class="caption">GP fits (squared exponential kernel) with different amplitudes and length scales.</span>
             </div>
             <p>
-                Typically, these hyperparameters are <b>fit to the data</b> to avoid underfitting or overfitting, using techniques like maximizing marginal likelihood or Bayesian model comparison (metrics like Bayesian Evidence).
+                Typically, these hyperparameters are fit to the data to avoid underfitting or overfitting, using techniques like maximizing marginal likelihood or Bayesian model comparison (metrics like Bayesian Evidence).
             </p>
         </div>
 
@@ -291,11 +297,10 @@
             <b>Gaussian Processes are flexible, uncertainty-aware tools for regression and more:</b>
             <ul>
                 <li>They let you fit functions without needing to specify a fixed formula.</li>
-                <li>They always provide meaningful confidence estimates for every prediction.</li>
-                <li>Your choice of kernel and hyperparameters encodes your assumptions about the data—which makes GPs both powerful and expressive.</li>
+                <li>They provide meaningful confidence estimates for every prediction.</li>
+                <li>Your choice of kernel and hyperparameters encodes your assumptions about the data—these must be set with caution.</li>
             </ul>
             <p>
-                Choose kernels and hyperparameters with care, fit them thoughtfully, and your GP can give robust, honest predictions even in complex, noisy scenarios.
             </p>
         </div>
       </main>
