@@ -18,38 +18,24 @@
         padding: 32px 24px 32px 24px;
       }
 
-      /* Center everything inside the main content */
-      main, .wrapper {
+      /* Main container has no text alignment; all content left aligned except headings/images */
+      main {
         margin: 0 auto !important;
+      }
+
+      /* Center headings only */
+      h1, h2 {
         text-align: center;
-      }
-
-      /* Adjust profile image style (optional!) */
-      img[alt="Zoe Ko"] {
-        border-radius: 50%;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-      }
-
-      /* Optional: Set font and tweak type appearance */
-      body {
-        font-family: 'Avenir', 'Raleway', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
-        background: #ffffff;
-        color: #222;
-        font-weight: 300;
-        font-size: 1.1em; /* Increased body font size */
-      }
-
-      /* Sharper, larger headings */
-      h1 {
         font-family: 'Avenir', 'Raleway', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
         font-weight: 400;
-        font-size: 2.2em; /* Increased H1 font size */
+      }
+
+      h1 {
+        font-size: 2.2em;
       }
 
       h2 {
-        font-family: 'Avenir', 'Raleway', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
-        font-weight: 400;
-        font-size: 1.8em; /* Increased H2 font size */
+        font-size: 1.8em;
       }
 
       a {
@@ -57,8 +43,23 @@
         text-decoration: none;
       }
 
+      body {
+        font-family: 'Avenir', 'Raleway', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+        background: #ffffff;
+        color: #222;
+        font-weight: 300;
+        font-size: 1.1em;
+      }
 
-      /* Tweak navigation bar spacing, make it look like tabs (optional) */
+      /* Responsive tweaks for small screens */
+      @media (max-width: 500px) {
+        .wrapper { padding: 14px 2px; }
+        .navbar a { font-size: 16px; }
+        .image-container img, .caption { max-width: 98vw !important;}
+        .caption { width: 98vw !important;}
+      }
+
+      /* Tweak navigation bar spacing, make it look like tabs */
       .navbar {
         text-align: right;
         padding: 1rem 2rem;
@@ -71,44 +72,45 @@
         font-size: 18px;
       }
 
-      /* Responsive tweaks for small screens */
-      @media (max-width: 500px) {
-        .wrapper { padding: 14px 2px; }
-        .navbar a { font-size: 16px; }
-      }
-
-
       /* Style for the name to match the body text color */
       .name-title {
         color: #222;
         font-size: 1.2em;
       }
 
-      /* Container for images to handle caption positioning */
+      /* Container for images to handle caption positioning - center images */
       .image-container {
-        position: relative;
+        text-align: center;
         margin: 20px 0;
       }
 
       .image-container img {
         max-width: 600px;
+        width: 100%;
         height: auto;
-        display: block;
-        margin: 0 auto;
+        display: inline-block;
       }
 
-      /* Style for the image caption */
+      /* Style for the image caption below image, right-aligned, but inside .image-container so it doesn't full justify */
       .caption {
         font-size: 0.8em;
         color: #777;
         text-align: right;
         margin-top: 5px;
+        width: 600px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+
+      /* Paragraph, lists, blockquotes -- default left alignment */
+      p, blockquote, ul, ol {
+        text-align: left;
       }
 
       b {
         font-weight: 800;
-        /* You can also add color or other properties: */
-        /* color: #222; */
       }
     </style>
 </head>
@@ -121,7 +123,7 @@
       <a href="../../cv.html">CV</a>
     </div>
     <div class="wrapper">
-      <main style="text-align: left;">
+      <main>
         <h1>Gaussian Processes: A Toy Example</h1>
 
         <div>
@@ -153,7 +155,10 @@
         <div>
             <p>Suppose you’ve collected a set of observations—maybe the daily temperature, stock prices, or (in my case) a measure of how stellar surfaces vary over time. For this example, let’s stick with temperature over time.</p>
             <p>Imagine you’ve collected a few discrete observations. Maybe you now want to predict tomorrow’s temperature. Or maybe there’s a day in the past with missing data, and you want to estimate the temperature for that day.</p>
-            <div class="image-container"><img src="data.png" alt="Observed temperature data" /></div>
+            <div class="image-container">
+                <img src="data.png" alt="Observed temperature data" />
+                <span class="caption">Example discrete observed temperatures over time.</span>
+            </div>
             <p>This is a classic regression problem: given observed data, how can you predict values for new inputs?</p>
         </div>
 
@@ -170,14 +175,20 @@
             <p>
                 Now let’s run a GP regression on the fake temperature data. I used the <b>Squared Exponential kernel</b>—which determines how smooth or wiggly the predicted function is.
             </p>
-            <div class="image-container"><img src="gp_no_error.png" alt="GP prediction without error" /></div>
+            <div class="image-container">
+                <img src="gp_no_error.png" alt="GP prediction without error" />
+                <span class="caption">GP fit with no measurement error.</span>
+            </div>
             <p>
                 The GP prediction fits the data perfectly at observed points, with zero uncertainty (assuming perfect measurements).
                 As you move further away from observed points, the uncertainty (shaded region) increases. If observations are made close together, there’s less uncertainty between them.
                 <br><br>
                 But in real life, measurement error exists, so let’s add in some error bars to the observations and update the fit.
             </p>
-            <div class="image-container"><img src="gp_with_error.png" alt="GP fit with error bars" /></div>
+            <div class="image-container">
+                <img src="gp_with_error.png" alt="GP fit with error bars" />
+                <span class="caption">GP fit incorporating observational uncertainties.</span>
+            </div>
             <p>
                 GP fit incorporating observational errors looks more realistic.
                 <br>
@@ -192,15 +203,26 @@
         <div>
             <p>
                 Let’s revisit the technical definition:
-                <blockquote>“A Gaussian process is a collection of random variables, any finite number of which have a joint Gaussian distribution.”</blockquote>
+            </p>
+            <blockquote>“A Gaussian process is a collection of random variables, any finite number of which have a joint Gaussian distribution.”</blockquote>
+            <p>
                 <b>A random variable</b> is simply a quantity whose outcome is uncertain, like the result of a dice roll. Let’s see how this relates to our GP: We can take a slice through the GP at day 100 and just look at the spread of predicted temperature for that day.
             </p>
-            <div class="image-container"><img src="data_one_marg.png" alt="Single slice of the GP" /></div>
-            <div class="image-container"><img src="one_marg.png" alt="Marginal distribution (bell curve)" /></div>
+            <div class="image-container">
+                <img src="data_one_marg.png" alt="Single slice of the GP" />
+                <span class="caption">GP prediction for a single day (marginal).</span>
+            </div>
+            <div class="image-container">
+                <img src="one_marg.png" alt="Marginal distribution (bell curve)" />
+                <span class="caption">Marginal distribution: bell curve for temperature on one day.</span>
+            </div>
             <p>
                 Marginal distribution: a familiar 1-D Gaussian (bell curve). This curve is described by two values: a mean (most likely temperature) and standard deviation (uncertainty).
             </p>
-            <div class="image-container"><img src="two_marg.png" alt="Two marginal distributions" /></div>
+            <div class="image-container">
+                <img src="two_marg.png" alt="Two marginal distributions" />
+                <span class="caption">Two marginal distributions: temperatures on day 100 and day 150.</span>
+            </div>
             <p>
                 Two marginal distributions: the temperature on day 100 and day 150.
                 Now we have a collection of random variables: the temperature for each day. The GP is a collection of these random variables.
@@ -210,7 +232,10 @@
                 “…any finite number of which have a joint Gaussian distribution.”<br>
                 If we plot the predicted temperatures for day 100 and day 150 as a joint distribution, we get a 2D Gaussian:
             </p>
-            <div class="image-container"><img src="joint_gaussian.png" alt="Joint Gaussian distribution" /></div>
+            <div class="image-container">
+                <img src="joint_gaussian.png" alt="Joint Gaussian distribution" />
+                <span class="caption">Joint distribution: pair of GP predictions (days 100 and 150).</span>
+            </div>
             <p>
                 Joint distribution: every pair of GP predictions is jointly Gaussian.
                 <br>
@@ -240,7 +265,10 @@
                 <li><b>ExpSineSquared:</b> Models repeating, periodic patterns.</li>
                 <li><b>SE + ExpSineSquared (Composite):</b> Combines smooth trends with periodic/seasonal patterns.</li>
             </ul>
-            <div class="image-container"><img src="kernel_choice.png" alt="Comparison of GP kernels" /></div>
+            <div class="image-container">
+                <img src="kernel_choice.png" alt="Comparison of GP kernels" />
+                <span class="caption">GP predictions using different kernels.</span>
+            </div>
             <p><b>Takeaway:</b> Your kernel choice is crucial—it tells the GP what kind of structure to expect in your data. Choose wisely!</p>
         </div>
 
@@ -253,7 +281,10 @@
                 <br>
                 Length scale: Controls how quickly the function can change. Small length scales let the GP fit rapid changes; large length scales create smoother functions.
             </p>
-            <div class="image-container"><img src="hyperparameter_choice.png" alt="GP fit with varied amplitude and length scale"/></div>
+            <div class="image-container">
+                <img src="hyperparameter_choice.png" alt="GP fit with varied amplitude and length scale"/>
+                <span class="caption">GP fits with different amplitudes and length scales.</span>
+            </div>
             <p>
                 Typically, these hyperparameters are <b>fit to the data</b> to avoid underfitting or overfitting, using techniques like maximizing marginal likelihood or Bayesian model comparison (metrics like Bayesian Evidence).
             </p>
