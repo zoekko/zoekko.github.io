@@ -103,7 +103,7 @@ b {
 }
 
 .fancyquote {
-  border-left: 4px solid #2594af;   /* vertical colored line */
+  border-left: 4px solid #000;   /* vertical colored line */
   padding-left: 20px;               /* space between line and text */
   margin: 24px 0;
 }
