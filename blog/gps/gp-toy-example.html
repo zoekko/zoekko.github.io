@@ -189,7 +189,7 @@
             </div>
             <p>
                 That looks a bit more realistic.
-                <br>
+                <br><br>
                 The fitted GP now lets us interpolate (estimate between known data) or extrapolate (predict beyond the data range), and crucially, it tells us how much we can trust each prediction. For example, the temperature on Day 100 is predicted to be 74.3° ± 5.6°. If you predict far beyond the last observation, uncertainty increases, reflecting our lack of information.
             </p>
             <p>
@@ -204,7 +204,7 @@
             </p>
             <blockquote>“A Gaussian process is a collection of random variables, any finite number of which have a joint Gaussian distribution.”</blockquote>
             <p>
-                <b>A random variable</b> is simply a quantity whose outcome is uncertain, like the result of a dice roll. Let’s see how this relates to our GP: We can take a slice through the GP at day 100 and just look at the spread of predicted temperature for that day.
+                A random variable is simply a quantity whose outcome is uncertain, like the result of a dice roll. Let’s see how this relates to our GP: We can take a slice through the GP at day 100 and just look at the spread of predicted temperature for that day.
             </p>
             <div class="image-container">
                 <img src="data_one_marg.png" alt="Single slice of the GP" />
@@ -216,7 +216,7 @@
             </div>
             <p>
                 This is the classic bell curve. It describes our single random variable (the temperature on day 100), and it is described by two values: a mean and standard deviation. The mean tells you the most likely value, and the standard deviation tells you the uncertainty on that value.
-            <br>
+            <br><br>
                 We can also take two slices—one at day 100 and one at day 150—and now we have two marginal distributions, each defined by its own mean and standard deviation. Now we’re looking at two random variables: the temperature on day 100 and the temperature on day 150.
             </p>
             <div class="image-container">
@@ -227,8 +227,9 @@
                 We can now easily extend this to every single point, and now we have a collection of random variables: the temperature of a given day. The GP is simply “a collection of [these] random variables.”
             </p>
             <p>
-                <b>Now onto the second part of the definition:</b><br>
-                “…any finite number of which have a joint Gaussian distribution.”<br>
+                Now onto the second part of the definition:<br>
+                “…any finite number of which have a joint Gaussian distribution.”
+                <br><br>
                 If we plot the predicted temperatures for day 100 and day 150 as a joint distribution, we get a 2D Gaussian:
             </p>
             <div class="image-container">
@@ -269,18 +270,17 @@
                 <img src="kernel_choice.png" alt="Comparison of GP kernels" />
                 <span class="caption">GP predictions using different kernels.</span>
             </div>
-            <p><b>Takeaway:</b> Your kernel choice is crucial, as it tells the GP what kind of structure to expect in your data.</p>
+            <p>In summary, the kernel choice is crucial, as it tells the GP what kind of structure to expect in the data.</p>
         </div>
 
         <h2>Kernel Hyperparameters: Amplitude & Length Scale</h2>
         <div>
             <p>
                 Once you’ve chosen your kernel, you need to set its hyperparameters:
-                <br><br>
-                Amplitude: Controls how much the function can vary vertically. Larger amplitude means the GP expects bigger changes.
-                <br><br>
-                Length scale: Controls how quickly the function can change. Small length scales let the GP fit rapid changes; large length scales create smoother functions.
-                <br><br>
+                <ul>
+                    <li><b>Amplitude:</b> Controls how much the function can vary vertically. Larger amplitude means the GP expects bigger changes.</li>
+                    <li><b>Length scale:</b> Controls how quickly the function can change. Small length scales let the GP fit rapid changes; large length scales create smoother functions.</li>
+                </ul>
                 Here, I use the squared exponential kernel in all four panels, but I varying the length scale and amplitude.
             </p>
             <div class="image-container">
@@ -292,7 +292,7 @@
             </p>
         </div>
 
-        <h2>Takeaway</h2>
+        <h2>Conclusion</h2>
         <div>
             Gaussian Processes are powerful tools for modeling and prediction amid noisy, limited, or complex data. They flexibly fit functions without needing a rigid formula and assign uncertainties to every prediction. However, it is crucial to carefully choose kernels and tune hyperparameters, which imparts assumptions about the phenomena being modeled. GPs enable robust predictions while communicating the confidence behind every result—a critical advantage in data-driven decision making.
             <p>
