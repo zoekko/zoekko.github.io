@@ -84,10 +84,8 @@ a {
 }
 
 .image-container img {
-  max-width: 600px;
+  max-width: 100%;
   height: auto;
-  display: block;
-  margin: 0 auto;
 }
 
 /* Style for the image caption */
