@@ -1,1 +1,175 @@
-GP Blog content here.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gaussian Processes: A Toy Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {font-family: Arial, sans-serif; line-height: 1.7; margin: 0; padding: 2em; background: #f9f9f9;}
+        h1, h2, h3 {color: #1288dd;}
+        h1 {margin-top: 0;}
+        img {display: block; margin: 1.5em auto; max-width: 100%;}
+        .section {margin-bottom: 2.5em;}
+        ul {margin-left: 2em;}
+        .important {background: #fff8e1; border-left: 6px solid #ffd54f; padding: 1em;}
+        .summary {background: #e3f2fd; border-left: 6px solid #1976d2; padding: 1em;}
+        a {color: #1976d2;}
+        .caption {font-size: 0.95em; color: #444; margin-bottom: 1.2em;}
+    </style>
+</head>
+<body>
+    <h1>Gaussian Processes: A Toy Example</h1>
+    <div class="section">
+        <p>
+            When I started learning about Gaussian Processes (GPs), an endeavor still in progress, I came across various definitions, some of which were intuitive:
+        </p>
+        <blockquote>
+            &ldquo;A Gaussian process model describes a probability distribution over possible functions that fit a set of points.&rdquo; 
+            <br>
+            <small><a href="https://arxiv.org/html/2009.10862v5" target="_blank">Source</a></small>
+        </blockquote>
+        <p>
+            Others were more technical:
+        </p>
+        <blockquote>
+            &ldquo;A Gaussian process is a collection of random variables, any finite number of which have a joint Gaussian distribution.&rdquo;
+            <br>
+            <small><a href="https://gaussianprocess.org/gpml/chapters/RW.pdf" target="_blank">Source</a></small>
+        </blockquote>
+        <p>
+            Gaussian Processes are powerful modeling tools. What helped me most was seeing a GP in practice with actual data. In this post, I’ll walk through a simple toy example using the 
+            <a href="https://tinygp.readthedocs.io/en/stable" target="_blank">tinygp library</a>.
+            You can find the notebook I used for all the figures 
+            <a href="https://github.com/zoekko" target="_blank">here</a>.
+        </p>
+    </div>
+
+    <h2>Motivation: Why use a Gaussian Process?</h2>
+    <div class="section">
+        <p>Suppose you&rsquo;ve collected a set of observations&mdash;maybe the daily temperature, stock prices, or (in my case) a measure of how stellar surfaces vary over time. For this example, let&rsquo;s stick with temperature over time.</p>
+        <p>Imagine you&rsquo;ve collected a few discrete observations. Maybe you now want to predict tomorrow&rsquo;s temperature. Or maybe there&rsquo;s a day in the past with missing data, and you want to estimate the temperature for that day. </p>
+        <img src="data.png" alt="Observed temperature data" />
+        <div class="caption">Example of collected temperature data.</div>
+        <p>This is a classic regression problem: given observed data, how can you predict values for new inputs?</p>
+    </div>
+
+    <h2>How Gaussian Processes Help</h2>
+    <div class="section">
+        <p><b>GPs allow you to model relationships</b> between your inputs (like days) and outputs (like temperature) without having to choose a specific functional form. Unlike fitting a straight line or a polynomial to your data (where you pre-choose a formula), GPs infer a distribution over possible functions that could explain your data, capturing both <b>predictions</b> and <b>uncertainty</b>.</p>
+        <p>
+            <b>Key feature:</b> GPs don&rsquo;t just output a single prediction. They also provide an uncertainty estimate, so you know how confident you are about each prediction. There&rsquo;s a big difference between predicting that tomorrow&rsquo;s temperature will be 70&deg; &plusmn; 5&deg;, or 70&deg; &plusmn; 50&deg;!
+        </p>
+    </div>
+
+    <h2>A Toy Example: GPs to Predict Temperature</h2>
+    <div class="section">
+        <p>
+            Now let&rsquo;s run a GP regression on the fake temperature data. I used the <b>Squared Exponential kernel</b>&mdash;which determines how smooth or wiggly the predicted function is.
+        </p>
+        <img src="gp_no_error.png" alt="GP prediction without error" />
+        <div class="caption">The GP prediction fits the data perfectly at observed points, with zero uncertainty (assuming perfect measurements).</div>
+        <p>
+            As you move further away from observed points, the uncertainty (shaded region) increases. If observations are made close together, there&rsquo;s less uncertainty between them.
+            <br><br>
+            But in real life, measurement error exists, so let&rsquo;s add in some error bars to the observations and update the fit.
+        </p>
+        <img src="gp_with_error.png" alt="GP fit with error bars" />
+        <div class="caption">GP fit incorporating observational errors looks more realistic.</div>
+        <p>
+            Now, the fitted GP lets us <b>interpolate</b> (estimate between known data) or <b>extrapolate</b> (predict beyond the data range), and crucially, tells us how much we can trust each prediction. For example, the temperature on Day 100 is predicted to be 74.3&deg; &plusmn; 5.6&deg;. If you predict far beyond the last observation, uncertainty increases, reflecting our lack of information.
+        </p>
+        <p>
+            And that&rsquo;s an example of how GPs can be used in regression: <b>Given noisy, sparse data, GPs flexibly fit and quantify your uncertainty everywhere.</b>
+        </p>
+    </div>
+
+    <h2>How does this all actually work?</h2>
+    <div class="section">
+        <p>
+            Let&rsquo;s revisit the technical definition:
+            <blockquote>&ldquo;A Gaussian process is a collection of random variables, any finite number of which have a joint Gaussian distribution.&rdquo;</blockquote>
+            <b>A random variable</b> is simply a quantity whose outcome is uncertain, like the result of a dice roll. Let&rsquo;s see how this relates to our GP: We can take a slice through the GP at day 100 and just look at the spread of predicted temperature for that day.
+        </p>
+        <img src="data_one_marg.png" alt="Single slice of the GP" />
+        <div class="caption">Predicted temperature distribution for a single day.</div>
+        <img src="one_marg.png" alt="Marginal distribution (bell curve)" />
+        <div class="caption">Marginal distribution: a familiar 1-D Gaussian (bell curve).</div>
+        <p>
+            This curve is described by two values: a mean (most likely temperature) and standard deviation (uncertainty).
+        </p>
+        <img src="two_marg.png" alt="Two marginal distributions" />
+        <div class="caption">Two marginal distributions: the temperature on day 100 and day 150.</div>
+        <p>
+            Now we have a collection of random variables: the temperature for each day. The GP is a collection of these random variables.
+        </p>
+        <p>
+            <b>Now, the second part of the definition:</b><br>
+            &ldquo;...any finite number of which have a joint Gaussian distribution.&rdquo;<br>
+            If we plot the predicted temperatures for day 100 and day 150 as a joint distribution, we get a 2D Gaussian:
+        </p>
+        <img src="joint_gaussian.png" alt="Joint Gaussian distribution" />
+        <div class="caption">Joint distribution: every pair of GP predictions is jointly Gaussian.</div>
+        <p>
+            This extends to higher dimensions too: any finite set of random variables in a GP is jointly Gaussian. In other words, a GP is an infinite-dimensional generalization of a Gaussian distribution. Every possible input is a random variable, and sets of those random variables are jointly Gaussian.
+        </p>
+    </div>
+
+    <h2>Components of a GP</h2>
+    <div class="section">
+        <p>
+            While a single Gaussian is defined by a mean and standard deviation, a GP is defined by a <b>mean function</b> and a <b>covariance matrix</b>. 
+            <br>
+            - <b>Mean function:</b> The predicted value for every possible input. (For my weather example, I set this as the average observed temperature.)
+            <br>
+            - <b>Covariance matrix:</b> Each pair of points has a quantified correlation&mdash;how much knowing one value helps you predict the other. For example, in weather data, day 3 and day 4 are highly correlated, but day 3 and day 100 are not.
+        </p>
+    </div>
+
+    <h2>Choosing the right GP kernel</h2>
+    <div class="section">
+        <p>
+            The <b>kernel</b> (covariance function) governs these correlations. It encodes your assumptions about how the data should behave: how correlated points should be, how smooth or wiggly the function might be, and whether there are underlying patterns like seasonality.
+        </p>
+        <ul>
+            <li><b>Squared Exponential (SE):</b> Assumes outputs are similar for nearby inputs; favors smooth, gradual changes.</li>
+            <li><b>Matern 3/2:</b> Allows for less smoothness (more roughness) in the fitted curve.</li>
+            <li><b>ExpSineSquared:</b> Models repeating, periodic patterns.</li>
+            <li><b>SE + ExpSineSquared (Composite):</b> Combines smooth trends with periodic/seasonal patterns.</li>
+        </ul>
+        <img src="kernel_choice.png" alt="Comparison of GP kernels" />
+        <div class="caption">How different kernels affect the GP fit.</div>
+        <p class="important">
+            <b>Takeaway:</b> Your kernel choice is crucial&#8212;it tells the GP what kind of structure to expect in your data. Choose wisely!
+        </p>
+    </div>
+
+    <h2>Kernel Hyperparameters: Amplitude & Length Scale</h2>
+    <div class="section">
+        <p>
+            Once you’ve chosen your kernel, you need to set its <b>hyperparameters</b>:
+            <br>
+            - <b>Amplitude:</b> Controls how much the function can vary vertically. Larger amplitude means the GP expects bigger changes.
+            <br>
+            - <b>Length scale:</b> Controls how quickly the function can change. Small length scales let the GP fit rapid changes; large length scales create smoother functions.
+        </p>
+        <img src="hyperparameter_choice.png" alt="GP fit with varied amplitude and length scale"/>
+        <div class="caption">Hyperparameters control the smoothness and variability of the GP fit.</div>
+        <p>
+            Typically, these hyperparameters are <b>fit to the data</b> to avoid underfitting or overfitting, using techniques like maximizing marginal likelihood or Bayesian model comparison (metrics like Bayesian Evidence).
+        </p>
+    </div>
+
+    <h2>Takeaway</h2>
+    <div class="section summary">
+        <b>Gaussian Processes are flexible, uncertainty-aware tools for regression and more:</b>
+        <ul>
+            <li>They let you fit functions without needing to specify a fixed formula.</li>
+            <li>They always provide meaningful confidence estimates for every prediction.</li>
+            <li>Your choice of kernel and hyperparameters encodes your assumptions about the data&#8212;which makes GPs both powerful and expressive.</li>
+        </ul>
+        <p>
+            Choose kernels and hyperparameters with care, fit them thoughtfully, and your GP can give robust, honest predictions even in complex, noisy scenarios.
+        </p>
+    </div>
+</body>
+</html>
