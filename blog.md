@@ -3,19 +3,22 @@ layout: default
 title: Blog
 ---
 
-<h1>Welcome to my personal blog– which is really less of a blog and more of a compilation of my notes on things I’m learning.
+<h1>
+  Welcome to my personal blog– which is really less of a blog and more of a compilation of my notes on things I’m learning.
 </h1>
+
+<hr>
 
 <div class="blog-entry" style="margin-bottom:2em;">
 
-  <h2>
+  <h3 style="font-size: 1.45em; font-weight: 500;">
     <a href="blog/gps/gp-toy-example.html" target="_blank" style="text-decoration:none; color:#2594af;">
       Gaussian Processes: A Toy Example
     </a>
-  </h2>
+  </h3>
   
   <div style="font-size: 0.95em; color: #595959;">
-    <span>⏱️ 7 min read</span> &nbsp;|&nbsp; <span>Published May 24, 2024</span>
+    <span>⏱️ 7 min read</span> &nbsp;|&nbsp; <span>Published Wed Oct 29, 2025</span>
   </div>
   
   <p style="margin-top:1em;">
