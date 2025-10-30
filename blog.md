@@ -16,7 +16,7 @@ title: Blog
 
   <h3 style="font-size: 1.45em; font-weight: 500;">
     <a href="blog/gps/gp-toy-example.html" style="text-decoration:none; color:#2594af;">
-      Gaussian Processes: A Toy Example
+      Intro to Gaussian Processes: A Toy Example
     </a>
   </h3>
   
