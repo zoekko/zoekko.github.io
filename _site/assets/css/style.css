@@ -572,4 +572,20 @@ footer {
   }
 }
 
+.fancyquote small {
+  font-size: 0.9em;                 /* keep source small */
+  color: #555;
+}
+
+.pkgname {
+  display: inline-block;
+  font-family: 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+  background: #f3f3f3;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 0.97em;
+  color: #222;
+  margin-right: 2px;
+}
 /*# sourceMappingURL=style.css.map */
