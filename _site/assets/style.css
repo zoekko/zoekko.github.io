@@ -63,3 +63,21 @@ a:hover {
   .wrapper { padding: 14px 2px; }
   .navbar a { font-size: 16px; }
 }
+
+.fancyquote {
+  border-left: 4px solid #2594af;   /* vertical colored line */
+  padding-left: 20px;               /* space between line and text */
+  margin: 24px 0;
+}
+
+.fancyquote em {
+  font-style: italic;
+  font-size: 1.3em;                 /* bigger quote text */
+  display: block;
+  line-height: 1.4;
+}
+
+.fancyquote small {
+  font-size: 0.9em;                 /* keep source small */
+  color: #555;
+}
