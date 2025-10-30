@@ -21,7 +21,7 @@ title: Blog
   </h3>
   
   <div style="font-size: 0.95em; color: #595959;">
-    <span>⏱️ 7 min read</span> &nbsp;|&nbsp; <span>Published Wed Oct 29, 2025</span>
+    <span>⏱️ 7 min read</span> &nbsp;|&nbsp; <span>Published: Wed Oct 29, 2025</span>
   </div>
   
   <p style="margin-top:1em;">
