@@ -6,7 +6,7 @@
   <ul>
     <li>
       <strong>Johns Hopkins University</strong><br>
-      Physics and Astronomy Ph.D. Candidate<br>
+      Physics and Astronomy Ph.D. Student<br>
       2024 – Present
     </li>
     <li>
