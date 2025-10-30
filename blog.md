@@ -7,7 +7,7 @@ title: Blog
   Welcome to my personal blog—
 </h1>
 <h3 style="font-size: 1em; font-weight: 200; margin-top: 0;">
-  which is really less of a blog and more of a compilation of my notes on things I’m learning.
+  which is less of a blog and more of a compilation of my notes on things I’m learning.
 </h3>
 
 <hr>
