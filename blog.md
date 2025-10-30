@@ -3,7 +3,7 @@ layout: default
 title: Blog
 ---
 
-<h1 style="font-size: 1.5em; margin-bottom: 0.5em;">
+<h1 style="font-size: 1.7em; margin-bottom: 0.5em;">
   Welcome to my personal blog—
 </h1>
 <h3 style="font-size: 1em; font-weight: 200; margin-top: 0;">
