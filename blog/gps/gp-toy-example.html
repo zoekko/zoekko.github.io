@@ -247,7 +247,7 @@
             <p>
                 While a single Gaussian distribution is defined by a mean and standard deviation, a GP is now defined by a mean function and a covariance matrix. Going from a mean value to a mean function is fairly straightforward: rather than a single predicted value for a single input value, the mean function now has a predicted value for every single possible input value. It essentially tells the GP what to fit around. For the weather example, I set the mean to be the average observed temperature. 
                 <br><br>
-                The covariance matrix is slightly more complicated than just a simple extension of a standard deviation. Not only does each point have its uncertainty, but each pair of points has a quantified correlation—how much knowing one helps predict the other. For instance, in the weather example, the temperature on day 3 is likely to be similar to day 4 (highly correlated), but not necessarily similar to day 100 (weakly correlated). The covariance matrix captures the correlations between data points.
+                The covariance matrix is slightly more complicated than just a simple extension of the standard deviation. Not only does each point have its uncertainty, but each pair of points has a quantified correlation—how much knowing one helps predict the other. For instance, in the weather example, the temperature on day 3 is likely to be similar to day 4 (highly correlated), but not necessarily similar to day 100 (weakly correlated). The covariance matrix captures the correlations between data points.
             </p>
         </div>
 
