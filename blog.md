@@ -6,7 +6,7 @@ title: Blog
 <h1 style="font-size: 1.5em; margin-bottom: 0.5em;">
   Welcome to my personal blog—
 </h1>
-<h3 style="font-size: 1em; margin-top: 0;">
+<h3 style="font-size: 1em; font-weight: 200; margin-top: 0;">
   which is really less of a blog and more of a compilation of my notes on things I’m learning.
 </h3>
 
