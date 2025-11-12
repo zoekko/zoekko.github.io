@@ -34,7 +34,7 @@
       <ul>
         <li>Developed and implemented a hierarchical Bayesian inference framework to analyze binary black hole spin distributions using LIGO gravitational wave data.</li>
         <li>Generated mock binary black hole populations with different component spin parameters to quantify how much spin information is extractable from observed effective spins.</li>
-        <li>Presented findings at the American Physical Society Conference in April 2023 and co-authored a publication in Physical Review D.</li>
+        <li>Presented findings at the American Physical Society April Meeting in April 2023 and co-authored a publication in Physical Review D.</li>
       </ul>
     </li>
     <li>
@@ -42,8 +42,8 @@
       Research Intern | Advisor: <strong>Howard Isaacson</strong> | June 2021 – January 2023
       <ul>
         <li>Developed and implemented a laser detection algorithm to search for potential technosignatures in optical stellar spectra.</li>
-        <li>Analyzed over 1000 spectra of nearby stars to set detection limits.</li>
-        <li>Presented work at the 2021 Assembly of the Order of the Octopus and AbSciCon 2022 and co-authored a publication in the Astronomical Journal.</li>
+        <li>Analyzed over 1,000 spectra of nearby stars to set detection limits.</li>
+        <li>Presented work at the Assembly of the Order of the Octopus (2021), AbSciCon 2022, and co-authored a publication in the Astronomical Journal.</li>
       </ul>
     </li>
     <li>
@@ -81,8 +81,9 @@
 
   <h2>Conference Talks and Posters</h2>
   <ul>
+    <li>Z. Ko, N. Espinoza, A. Jordan. Mitigating Stellar Contamination in JWST Transit Data with Gaussian Processes, Exojamboree, Baltimore, MD, November 2025. (Oral Presentation)</li>
     <li>Z. Ko, N. Espinoza, A. Jordan. A Gaussian Process Framework for Exoplanet Atmospheric Retrievals, Exoclimes V, Montreal, QC, Canada, July 2025. (Poster)</li>
-    <li>Z. Ko, N. Espinoza, A. Jordan. A Gaussian Process Framework for Exoplanet Atmospheric Retrievals, Emerging Researchers in Exoplanet Science Symposium X, Princeton University, Princeton, NJ, June 2025. (Oral Presentation)</li>
+    <li>Z. Ko, N. Espinoza, A. Jordan. Physically-Guided Gaussian Process Retrievals for TOI-3235b, Emerging Researchers in Exoplanet Science Symposium X, Princeton University, Princeton, NJ, June 2025. (Oral Presentation)</li>
     <li>Z. Ko, S. J. Miller, K. Chatziioannou. Analyzing the Effective and Component Spin Distributions of Binary Black Hole Mergers, American Physical Society April Meeting, Minneapolis, MN, April 2023. (Oral Presentation)</li>
     <li>Z. Ko, H. Isaacson, A. Zuckerman, S. Croft. Search for Laser Emission Lines with the Automated Planet Finder Telescope, American Astronomical Society Meeting, Seattle, WA, January 2023. (Poster)</li>
     <li>Z. Ko, H. Isaacson, A. Zuckerman. Search for Laser Emission Lines with the Automated Planet Finder Telescope, AbSciCon, Atlanta, GA, May 2022. (Poster)</li>
@@ -91,9 +92,9 @@
 
   <h2>Skills</h2>
   <ul>
-    <li><strong>Programming:</strong> Python (NumPy, SciPy, pandas, matplotlib, Astropy, etc.), Java, R, SQL, LaTeX, CSS, HTML, Unix shell</li>
-    <li><strong>Statistical Modeling:</strong> Bayesian inference frameworks (PyMC, emcee, dynesty), Gaussian Processes (george, celerite)</li>
-    <li><strong>Languages:</strong> Native fluency in English and Mandarin; strong proficiency in Spanish and Thai</li>
+    <li><strong>Programming:</strong> Advanced proficiency in Python (NumPy, SciPy, pandas, matplotlib, Astropy, etc.); also experienced with Java and R.</li>
+    <li><strong>Statistical Modeling:</strong> Extensive experience with Bayesian inference frameworks (PyMC, emcee, dynesty) and Gaussian process modeling (tinygp, george, celerite).</li>
+    <li><strong>Languages:</strong> Native fluency in English and Mandarin; strong proficiency in Spanish and Thai.</li>
   </ul>
 
   <h2>Teaching and Outreach</h2>
@@ -107,18 +108,6 @@
       <strong>Peer Tutor at the Berkeley Student Learning Center</strong><br>
       August 2022 – May 2023<br>
       Provided tutoring services for introductory astrophysics courses, supporting students with homework, lecture material, and exam preparation.
-    </li>
-    <li>
-      <strong>Research Mentor at the Berkeley Undergraduate Lab</strong><br>
-      August 2021 – May 2022<br>
-      Mentored a team of five undergraduates through a year-long independent research project.<br>
-      Designed and led Python bootcamps and research workshops.
-    </li>
-    <li>
-      <strong>Student Mentor and Outreach Director of Berkeley Engineers and Mentors</strong><br>
-      January 2020 – May 2023<br>
-      Led weekly science labs at public elementary and middle schools in Oakland and coordinated outreach events.<br>
-      Trained and supervised teams of undergraduate mentors, facilitating their development as effective STEM educators.
     </li>
   </ul>
 </div>
