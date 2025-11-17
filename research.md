@@ -26,7 +26,7 @@ However, this process is complicated by stellar contamination—variability and 
 </div>
 
 <div style="text-align: left;">
-My current work aims to overcome these challenges by implementing Gaussian Processes into the atmospheric retrieval pipeline. Rather than relying solely on physical models, <b>I am implementing a flexible, data-driven framework that can effectively model the unknown and complex stellar signals present in transmission spectra.</b> Gaussian Processes are flexible statistical models that can capture complex patterns in data without assuming a specific form, making them a powerful tool to characterize stellar noise in transmission spectra. (Check out <a href="https://thegradient.pub/gaussian-process-not-quite-for-dummies/" target="_blank">this excellent introduction to GPs</a>.)
+My current work aims to overcome these challenges by implementing Gaussian Processes into the atmospheric retrieval pipeline. Rather than relying solely on physical models, <b>I am implementing a flexible, data-driven framework that can effectively model the unknown and complex stellar signals present in transmission spectra.</b> Gaussian Processes are flexible statistical models that can capture complex patterns in data without assuming a specific form, making them a powerful tool to characterize stellar noise in transmission spectra.
 <br><br>
 <b>Ultimately, the goal of this work is to push the boundaries of exoplanet atmospheric characterization by implementing novel statistical frameworks that can robustly disentangle planetary signals from stellar contamination.</b>
 <br><br>
