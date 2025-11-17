@@ -23,9 +23,9 @@
       <strong>Johns Hopkins University</strong><br>
       Research Assistant | Advisor: <strong>Néstor Espinoza</strong> | August 2024 – Present
       <ul>
-        <li>Developed a Gaussian Process aided atmospheric retrieval framework to mitigate stellar contamination in transmission spectroscopy.</li>
+        <li>Implemented a Gaussian Process-aided atmospheric retrieval framework to mitigate stellar contamination in transmission spectroscopy.</li>
         <li>Applied retrieval framework to constrain the atmospheric properties of a gas giant orbiting an M dwarf to better understand giant planet formation around low mass stars.</li>
-        <li>Leading a first-author publication and a JWST Cycle 5 follow-up proposal based on current work.</li>
+        <li>Leading a first-author publication on current work.</li>
       </ul>
     </li>
     <li>
@@ -83,7 +83,7 @@
   <ul>
     <li>Z. Ko, N. Espinoza, A. Jordan. Mitigating Stellar Contamination in JWST Transit Data with Gaussian Processes, Exojamboree, Baltimore, MD, November 2025. (Oral Presentation)</li>
     <li>Z. Ko, N. Espinoza, A. Jordan. A Gaussian Process Framework for Exoplanet Atmospheric Retrievals, Exoclimes V, Montreal, QC, Canada, July 2025. (Poster)</li>
-    <li>Z. Ko, N. Espinoza, A. Jordan. Physically-Guided Gaussian Process Retrievals for TOI-3235b, Emerging Researchers in Exoplanet Science Symposium X, Princeton University, Princeton, NJ, June 2025. (Oral Presentation)</li>
+    <li>Z. Ko, N. Espinoza, A. Jordan. Gaussian Process Retrievals for TOI-3235b, Emerging Researchers in Exoplanet Science Symposium X, Princeton University, Princeton, NJ, June 2025. (Oral Presentation)</li>
     <li>Z. Ko, S. J. Miller, K. Chatziioannou. Analyzing the Effective and Component Spin Distributions of Binary Black Hole Mergers, American Physical Society April Meeting, Minneapolis, MN, April 2023. (Oral Presentation)</li>
     <li>Z. Ko, H. Isaacson, A. Zuckerman, S. Croft. Search for Laser Emission Lines with the Automated Planet Finder Telescope, American Astronomical Society Meeting, Seattle, WA, January 2023. (Poster)</li>
     <li>Z. Ko, H. Isaacson, A. Zuckerman. Search for Laser Emission Lines with the Automated Planet Finder Telescope, AbSciCon, Atlanta, GA, May 2022. (Poster)</li>
