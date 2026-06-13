@@ -14,15 +14,10 @@ title: Home
   </div>
 </div>
 
-
-
-
 <div style="text-align: left;">
-Hello! I am a PhD student in Physics & Astronomy at Johns Hopkins University, where I work with <a href="https://nestor-espinoza.com/" target="_blank">Dr. Néstor Espinoza</a> in the <a href="https://www.stsci.edu/stsci-research/research-groups/transiting-exoplanets-group" target="_blank">Transiting Exoplanets Group</a> at STScI. My research interests center on leveraging statistical and computational tools to advance the study of exoplanet atmospheres.
+Hello! I am a PhD student in Physics & Astronomy at Johns Hopkins University, where I work with <a href="https://nestor-espinoza.com/" target="_blank">Dr. Néstor Espinoza</a> in the <a href="https://www.stsci.edu/stsci-research/research-groups/transiting-exoplanets-group" target="_blank">Transiting Exoplanets Group</a> at STScI. Currently, I am at the Lawrence Livermore National Lab in California as a <a href="https://pandorasat.com/" target="_blank">Pandora</a> Graduate Intern, working with <a href="https://people.llnl.gov/mcgill5" target="_blank">Dr. Peter McGill</a>. 
 <br><br>
-Currently, I am at the Lawrence Livermore National Lab in California as a <a href="[https://www.stsci.edu/stsci-research/research-groups/transiting-exoplanets-group](https://pandorasat.com/)" target="_blank">Pandora</a> Graduate Intern, working with <a href="[https://nestor-espinoza.com/](https://people.llnl.gov/mcgill5)" target="_blank">Dr. Peter McGill</a>.
-<br><br>
-My research currently focuses on developing statistical frameworks to mitigate the effects of stellar contamination in transmission spectroscopy, with the goal of achieving more reliable and precise characterizations of exoplanet atmospheres.
+My research focuses on using statistical and computational tools to study exoplanet atmospheres. I currently develop frameworks with Gaussian Processes to mitigate stellar contamination in transmission spectroscopy, enabling more reliable and precise atmospheric characterization.
 <br><br>
 I am always eager to continue learning and expanding my skillsets, and I am particularly interested in continuing to develop stellar contamination mitigation techniques as well as exploring new computational and statistical approaches that can push the boundaries of exoplanetary science.
 <br><br>
