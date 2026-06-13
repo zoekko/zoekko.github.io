@@ -7,8 +7,8 @@
   <ul>
     <li>
       <strong>Johns Hopkins University</strong><br>
+      Physics and Astronomy Ph.D. Student (current)<br>
       M.A. Physics (2026)<br>
-      Physics and Astronomy Ph.D. Student<br>
       2024 – Present
     </li>
     <li>
@@ -25,7 +25,7 @@
       <strong>Lawrence Livermore National Lab, NASA Pandora Team</strong><br>
       Graduate Intern | Advisor: <strong>Peter McGill</strong> | March 2026 – Present
       <ul>
-        <li>Develop and apply statistical methods for atmospheric characterization with a focus on mitigating stellar contamination with data from the NASA Pandora mission.</li>
+        <li>Develop a Gaussian Process framework to extract spot and photosphere spectra from the NASA Pandora mission to characterize host stars and improve exoplanetary atmospheric characterization.</li>
       </ul>
     </li>
     <li>
@@ -83,6 +83,7 @@
 
   <h2>Conference Talks and Posters</h2>
   <ul>
+    <li>Z. Ko, P. McGill. Mitigating Stellar Contamination with Pandora Data, Pandora Team Meeting, NASA Goddard, Greenbelt, MD, June 2026. (Oral Presentation)</li>
     <li>Z. Ko, N. Espinoza, A. Jordan. Probing the Atmospheres of Giant Planets around M Stars Amid Stellar Contamination, Invited Speaker, Universidad de Chile, Santiago, Chile, March 2026. (Oral Presentation)</li>
     <li>Z. Ko, N. Espinoza, A. Jordan. Characterizing Giant Planets around M Dwarfs amid Stellar Contamination with Gaussian Processes, Invited Speaker, Pontifical Catholic University, Santiago, Chile, March 2026. (Oral Presentation)</li>
     <li>Z. Ko, N. Espinoza, A. Jordan. Unveiling the Atmospheres of Giant Planets around M Stars Amid Stellar Contamination, Invited Speaker, Universidad Diego Portales, Santiago, Chile, March 2026. (Oral Presentation)</li>
@@ -106,12 +107,12 @@
   <ul>
     <li>
       <strong>STEM Mentor at learnSTEM Research Mentorship Program</strong><br>
-      March 2026 – Present<br>
+      March 2026 – June 2026<br>
       Mentor a high school student in a 9-week program to complete an independent research project.
     </li>
     <li>
       <strong>Physics and Astronomy Peer Mentor at Johns Hopkins</strong><br>
-      August 2025 – Present<br>
+      August 2025 – May 2026<br>
       Advise physics and astronomy undergraduate students academically and professionally.
     </li>
     <li>
