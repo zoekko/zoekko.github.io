@@ -83,6 +83,7 @@
 
   <h2>Conference Talks and Posters</h2>
   <ul>
+    <li>Z. Ko, N. Espinoza, A. Jordan, P. McGill. JWST Transmission Spectrum of a GEMS Target, Exoplanets 6, Porto, Portugal, June 2026. (Poster)</li>
     <li>Z. Ko, P. McGill. Mitigating Stellar Contamination with Pandora Data, Pandora Team Meeting, NASA Goddard, Greenbelt, MD, June 2026. (Oral Presentation)</li>
     <li>Z. Ko, N. Espinoza, A. Jordan. Probing the Atmospheres of Giant Planets around M Stars Amid Stellar Contamination, Invited Speaker, Universidad de Chile, Santiago, Chile, March 2026. (Oral Presentation)</li>
     <li>Z. Ko, N. Espinoza, A. Jordan. Characterizing Giant Planets around M Dwarfs amid Stellar Contamination with Gaussian Processes, Invited Speaker, Pontifical Catholic University, Santiago, Chile, March 2026. (Oral Presentation)</li>
