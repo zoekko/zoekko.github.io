@@ -22,19 +22,19 @@
   <h2>Research Experience</h2>
   <ul>
     <li>
-      <strong>Lawrence Livermore National Lab, NASA Pandora Graduate Intern</strong><br>
-      Graduate Intern | Advisor: <strong>Peter McGill</strong> | March 2026 – September 2026
-      <ul>
-        <li>Incorporated Gaussian Processes into a stellar retrieval pipeline designed for Pandora data.</li>
-        <li>Validated pipeline on synthetic observations, demonstrating improved stellar parameter recovery and contamination corrections across diverse star-planet scenarios.</li>
-      </ul>
-    </li>
-    <li>
       <strong>Johns Hopkins University</strong><br>
       Research Assistant | Advisor: <strong>Néstor Espinoza</strong> | August 2024 – Present
       <ul>
         <li>Implemented a Gaussian Process-aided atmospheric retrieval framework to mitigate stellar contamination in transmission spectroscopy.</li>
         <li>Applied retrieval framework to constrain the atmospheric properties of a gas giant orbiting an M dwarf to better understand giant planet formation around low mass stars.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Lawrence Livermore National Lab, NASA Pandora Graduate Intern</strong><br>
+      Graduate Intern | Advisor: <strong>Peter McGill</strong> | March 2026 – September 2026
+      <ul>
+        <li>Incorporated Gaussian Processes into a stellar retrieval pipeline designed for Pandora data.</li>
+        <li>Validated pipeline on synthetic observations, demonstrating improved stellar parameter recovery and contamination corrections across diverse star-planet scenarios.</li>
       </ul>
     </li>
     <li>
