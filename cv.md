@@ -22,10 +22,11 @@
   <h2>Research Experience</h2>
   <ul>
     <li>
-      <strong>Lawrence Livermore National Lab, NASA Pandora Team</strong><br>
-      Graduate Intern | Advisor: <strong>Peter McGill</strong> | March 2026 – Present
+      <strong>Lawrence Livermore National Lab, NASA Pandora Graduate Intern</strong><br>
+      Graduate Intern | Advisor: <strong>Peter McGill</strong> | March 2026 – September 2026
       <ul>
-        <li>Develop a Gaussian Process framework to extract spot and photosphere spectra from the NASA Pandora mission to characterize host stars and improve exoplanetary atmospheric characterization.</li>
+        <li>Incorporated Gaussian Processes into a stellar retrieval pipeline designed for Pandora data.</li>
+        <li>Validated pipeline on synthetic observations, demonstrating improved stellar parameter recovery and contamination corrections across diverse star-planet scenarios.</li>
       </ul>
     </li>
     <li>
@@ -76,20 +77,23 @@
 
   <h2>Publications</h2>
   <ul>
-    <li>Z. Ko, N. Espinoza, A. Jordán, E. M. Bryant, M. Schlecker, M. J. Hobson, R. Brahm, R. Burn, & T. Henning. 2026, "JWST Transmission Spectroscopy of TOI-3235 b: Constraints on Giant Planet Formation around M1 Dwarfs amid Stellar Contamination," AJ, under review.</li>
+    <li>Z. Ko, P. McGill, B. V. Rackham, D. Apai, A. R. Iyer, J. F. Rowe, L. Welbanks, S. Saha, Y. Rotman, & The Pandora Team. 2026, "NASA's Pandora SmallSat Mission: Gaussian Processes for Simulated Stellar Contamination Corrections amid Imperfect Stellar Models," AJ, under review.</li>
+    <li>Z. Ko, N. Espinoza, A. Jordán, D. Bayliss, E. M. Bryant, M. Schlecker, M. J. Hobson, R. Brahm, R. Burn, & T. Henning. 2026, "JWST Transmission Spectroscopy of TOI-3235 b: Challenges in Constraining Giant Planet Atmospheres around M Dwarfs amid Stellar Contamination," AJ, 172, 174</li>
     <li>S. J. Miller, Z. Ko, T. Callister, & K. Chatziioannou. 2024, "Gravitational waves carry information beyond effective spin parameters but it is hard to extract," Phys. Rev. D, 109, 104036</li>
     <li>A. Zuckerman, Z. Ko, H. Isaacson, S. Croft, D. Price, M. Lebofsky, & A. Siemion. 2023, "The Breakthrough Listen Search for Intelligent Life: A Laser Search Pipeline for the Automated Planet Finder," AJ, 165, 114</li>
   </ul>
 
   <h2>Conference Talks and Posters</h2>
   <ul>
+    <li>Z. Ko, P. McGill. Characterizing Exoplanet Atmospheres with the Pandora SmallSat Mission, Space Science Institute Seminar, Lawrence Livermore National Laboratory, Livermore, CA, September 2026. (Oral Presentation)</li>
+<li>Z. Ko, P. McGill. Empirically Correcting Stellar Contamination with NASA's Pandora Mission, Annual Poster Showcase, Lawrence Livermore National Laboratory, Livermore, CA, July 2026. (Poster)</li>
     <li>Z. Ko, N. Espinoza, A. Jordan, P. McGill. JWST Transmission Spectrum of a GEMS Target, Exoplanets 6, Porto, Portugal, June 2026. (Poster)</li>
     <li>Z. Ko, P. McGill. Mitigating Stellar Contamination with Pandora Data, Pandora Team Meeting, NASA Goddard, Greenbelt, MD, June 2026. (Oral Presentation)</li>
     <li>Z. Ko, N. Espinoza, A. Jordan. Probing the Atmospheres of Giant Planets around M Stars Amid Stellar Contamination, Invited Speaker, Universidad de Chile, Santiago, Chile, March 2026. (Oral Presentation)</li>
     <li>Z. Ko, N. Espinoza, A. Jordan. Characterizing Giant Planets around M Dwarfs amid Stellar Contamination with Gaussian Processes, Invited Speaker, Pontifical Catholic University, Santiago, Chile, March 2026. (Oral Presentation)</li>
     <li>Z. Ko, N. Espinoza, A. Jordan. Unveiling the Atmospheres of Giant Planets around M Stars Amid Stellar Contamination, Invited Speaker, Universidad Diego Portales, Santiago, Chile, March 2026. (Oral Presentation)</li>
     <li>Z. Ko, N. Espinoza, A. Jordan. Mitigating Stellar Contamination in JWST Transit Data with Gaussian Processes, Exojamboree, Baltimore, MD, November 2025. (Oral Presentation)</li>
-    <li>Z. Ko, N. Espinoza, A. Jordan. A Gaussian Process Framework for Exoplanet Atmospheric Retrievals, Exoclimes V, Montreal, QC, Canada, July 2025. (Poster)</li>
+    <li>Z. Ko, N. Espinoza, A. Jordan. A Gaussian Process Framework for Exoplanet Atmospheric Retrievals, Exoclimes VII, Montreal, QC, Canada, July 2025. (Poster)</li>
     <li>Z. Ko, N. Espinoza, A. Jordan. Gaussian Process Retrievals for TOI-3235b, Emerging Researchers in Exoplanet Science Symposium X, Princeton University, Princeton, NJ, June 2025. (Oral Presentation)</li>
     <li>Z. Ko, S. J. Miller, K. Chatziioannou. Analyzing the Effective and Component Spin Distributions of Binary Black Hole Mergers, American Physical Society April Meeting, Minneapolis, MN, April 2023. (Oral Presentation)</li>
     <li>Z. Ko, H. Isaacson, A. Zuckerman, S. Croft. Search for Laser Emission Lines with the Automated Planet Finder Telescope, American Astronomical Society Meeting, Seattle, WA, January 2023. (Poster)</li>
