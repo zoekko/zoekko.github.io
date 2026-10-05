@@ -15,7 +15,7 @@ title: Home
 </div>
 
 <div style="text-align: left;">
-Hello! I am a PhD student in Physics & Astronomy at Johns Hopkins University, where I work with <a href="https://nestor-espinoza.com/" target="_blank">Dr. Néstor Espinoza</a> in the <a href="https://www.stsci.edu/stsci-research/research-groups/transiting-exoplanets-group" target="_blank">Transiting Exoplanets Group</a> at STScI. Currently, I am at the Lawrence Livermore National Lab in California as a <a href="https://pandorasat.com/" target="_blank">Pandora</a> Graduate Intern, working with <a href="https://people.llnl.gov/mcgill5" target="_blank">Dr. Peter McGill</a>. 
+Hello! I am a PhD student in Physics & Astronomy at Johns Hopkins University, where I work with <a href="https://nestor-espinoza.com/" target="_blank">Dr. Néstor Espinoza</a> in the <a href="https://www.stsci.edu/stsci-research/research-groups/transiting-exoplanets-group" target="_blank">Transiting Exoplanets Group</a> at STScI. I was previously at the Lawrence Livermore National Lab in California working on the NASA LLNL <a href="https://pandorasat.com/" target="_blank">Pandora</a> SmallSat Mission as a graduate intern, working with <a href="https://people.llnl.gov/mcgill5" target="_blank">Dr. Peter McGill</a>. 
 <br><br>
 My research focuses on using statistical and computational tools to study exoplanet atmospheres. I currently develop frameworks with Gaussian Processes to mitigate stellar contamination in transmission spectroscopy, enabling more reliable and precise atmospheric characterization.
 <br><br>
